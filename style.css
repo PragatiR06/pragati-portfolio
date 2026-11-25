@@ -449,4 +449,31 @@ body {
     .container h1 {
         font-size: 32px;
     }
+
+    
+/* Visible Botanical Photo Background Fix */
+
+.hero-image {
+    position: relative;
+    isolation: isolate;
+}
+
+.image-circle {
+    display: block;
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background: #dce4d2;
+    border-radius: 50%;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.hero-image img {
+    position: relative;
+    z-index: 1;
+}
+
 }
