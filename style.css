@@ -861,6 +861,27 @@ body {
         height: 36px;
     }
 }
+    
+
+/* Desktop Technology Icons Size Fix */
+
+@media (min-width: 701px) {
+    .tech-icons {
+        gap: 12px;
+    }
+
+    .tech-icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+    }
+
+    .tech-icon img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+}
 
 
 }
