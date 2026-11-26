@@ -41,7 +41,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: 20px;
     background: var(--cream);
     border-bottom: 1px solid var(--border);
     position: relative;
@@ -66,12 +66,12 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 26px;
+    gap: 22px;
 }
 
 .navbar a {
-    color: var(--text);
     text-decoration: none;
+    color: var(--text);
     font-size: 14px;
     font-weight: 600;
     padding: 10px 0;
@@ -106,13 +106,12 @@ body {
 
 .botanical-hero {
     max-width: 1440px;
-    min-height: 760px;
     margin: 0 auto;
-    padding: 65px 5% 55px;
+    padding: 55px 5%;
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
     align-items: center;
-    gap: 55px;
+    gap: 45px;
     position: relative;
 }
 
@@ -134,7 +133,7 @@ body {
     aspect-ratio: 1 / 1;
     background: var(--circle-green);
     border-radius: 50%;
-    top: 35px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 0;
@@ -143,8 +142,8 @@ body {
 .hero-image img {
     display: block;
     width: 100%;
-    max-width: 500px;
-    height: 590px;
+    max-width: 460px;
+    height: 540px;
     object-fit: cover;
     object-position: center top;
     border: 0;
@@ -161,31 +160,32 @@ body {
     z-index: 2;
     font-family: 'Playfair Display', Georgia, serif;
     font-style: italic;
-    font-size: 27px;
+    font-size: 25px;
     color: var(--green);
-    margin-top: 22px;
+    margin-top: 18px;
     text-align: center;
+    line-height: 1.3;
 }
 
 .leaf-decoration {
     position: absolute;
     z-index: 2;
     color: var(--leaf-green);
-    font-size: 85px;
+    font-size: 72px;
     opacity: 0.8;
     pointer-events: none;
     line-height: 1;
 }
 
 .leaf-one {
-    top: 35px;
-    left: -25px;
+    top: 25px;
+    left: -10px;
     transform: rotate(-35deg);
 }
 
 .leaf-two {
-    bottom: 100px;
-    right: -15px;
+    bottom: 85px;
+    right: -10px;
     transform: rotate(145deg);
 }
 
@@ -205,12 +205,12 @@ body {
     letter-spacing: 2.5px;
     font-size: 12px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
 .hero-content h1 {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(48px, 6vw, 82px);
+    font-size: clamp(44px, 6vw, 82px);
     line-height: 1.08;
     margin: 0 0 10px;
     color: var(--text);
@@ -221,27 +221,27 @@ body {
 }
 
 .hero-content h2 {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 600;
     color: var(--green);
-    margin: 10px 0 18px;
+    margin: 8px 0 14px;
 }
 
 .hero-content h3,
 .hero-content .tagline {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(22px, 2.5vw, 32px);
-    line-height: 1.4;
+    font-size: clamp(20px, 2.5vw, 30px);
+    line-height: 1.35;
     font-weight: 500;
     color: var(--text);
-    margin: 0 0 20px;
+    margin: 0 0 16px;
 }
 
 .hero-content > p {
-    font-size: 17px;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.75;
     color: var(--muted);
-    margin-bottom: 28px;
+    margin-bottom: 24px;
 }
 
 /* BUTTONS */
@@ -251,8 +251,8 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 14px;
-    margin: 22px 0 32px;
+    gap: 12px;
+    margin: 18px 0 26px;
 }
 
 .btn {
@@ -260,7 +260,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 6px;
-    padding: 15px 24px;
+    padding: 13px 22px;
     border-radius: 35px;
     text-decoration: none;
     font-size: 14px;
@@ -299,16 +299,16 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 12px;
-    margin: 24px 0;
+    gap: 10px;
+    margin: 20px 0;
 }
 
 .tech-icon {
-    width: 56px;
-    height: 56px;
+    width: 52px;
+    height: 52px;
     background: var(--white);
     border: 1px solid var(--border);
-    border-radius: 16px;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,8 +316,8 @@ body {
 }
 
 .tech-icon img {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
 }
 
@@ -325,7 +325,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 9px;
-    margin-top: 24px;
+    margin-top: 20px;
 }
 
 .tech-list span,
@@ -343,11 +343,11 @@ body {
 .location-text {
     display: flex;
     flex-wrap: wrap;
-    gap: 22px;
+    gap: 18px;
     color: var(--muted);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 /* SUBPAGES */
@@ -403,7 +403,7 @@ body {
     font-size: 13px;
 }
 
-/* TABLET */
+/* TABLET & NARROW VIEWPORTS */
 
 @media (max-width: 1000px) {
     .header {
@@ -412,102 +412,139 @@ body {
     }
 
     .navbar {
-        gap: 18px;
+        gap: 14px;
     }
 
     .botanical-hero {
-        gap: 35px;
-        padding: 50px 4%;
+        gap: 24px;
+        padding: 36px 3%;
     }
 
     .hero-image img {
-        height: 480px;
-    }
-}
-
-/* MOBILE */
-
-@media (max-width: 700px) {
-    .header {
-        padding: 18px 15px;
-        gap: 15px;
-    }
-
-    .logo {
-        font-size: 23px;
-    }
-
-    .navbar {
-        width: 100%;
-        gap: 8px 17px;
-    }
-
-    .navbar a {
-        font-size: 13px;
-        padding: 6px 0;
-    }
-
-    .talk-btn {
-        padding: 11px 20px;
-        font-size: 13px;
-    }
-
-    .botanical-hero {
-        min-height: auto;
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 45px 20px;
-        gap: 35px;
-    }
-
-    .hero-image {
-        width: 100%;
-    }
-
-    .hero-image img {
-        width: min(88%, 390px);
-        height: 430px;
+        height: 360px;
     }
 
     .image-circle {
-        width: min(82%, 300px);
-        top: 25px;
+        width: 240px;
+        top: 10px;
     }
 
     .leaf-decoration {
-        font-size: 60px;
+        font-size: 46px;
     }
 
     .image-caption {
-        font-size: 23px;
+        font-size: 19px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 560px) {
+    .header {
+        padding: 14px 12px;
+        gap: 10px;
     }
 
-    .hero-content {
-        width: 100%;
+    .logo {
+        font-size: 21px;
+    }
+
+    .navbar {
+        gap: 6px 10px;
+    }
+
+    .navbar a {
+        font-size: 11px;
+        padding: 4px 0;
+    }
+
+    .talk-btn {
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+
+    .botanical-hero {
+        gap: 16px;
+        padding: 24px 12px;
+    }
+
+    .hero-image img {
+        height: 250px;
+    }
+
+    .image-circle {
+        width: 165px;
+        top: 8px;
+    }
+
+    .leaf-decoration {
+        font-size: 32px;
+    }
+
+    .image-caption {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .role-label {
+        padding: 6px 12px;
+        font-size: 9px;
+        letter-spacing: 1.5px;
     }
 
     .hero-content h1 {
-        font-size: 48px;
+        font-size: 28px;
     }
 
     .hero-content h2 {
-        font-size: 22px;
+        font-size: 14px;
+        margin: 4px 0 8px;
     }
 
     .hero-content h3,
     .hero-content .tagline {
-        font-size: 22px;
+        font-size: 13px;
+        margin-bottom: 10px;
     }
 
     .hero-content > p {
-        font-size: 15px;
+        font-size: 11px;
+        line-height: 1.5;
+        margin-bottom: 14px;
     }
 
     .hero-buttons,
-    .tech-icons,
-    .tech-list,
+    .buttons {
+        gap: 8px;
+        margin: 12px 0 16px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+
+    .tech-icons {
+        gap: 6px;
+        margin: 12px 0;
+    }
+
+    .tech-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+    }
+
+    .tech-icon img {
+        width: 18px;
+        height: 18px;
+    }
+
     .location-text {
-        justify-content: center;
+        gap: 10px;
+        font-size: 10px;
+        margin-top: 10px;
     }
 
     .container {
