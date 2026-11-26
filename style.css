@@ -933,5 +933,50 @@ body {
     }
 }
 
+    
+/* FINAL PHOTO DESIGN FIX */
+
+.botanical-hero .hero-image {
+    position: relative;
+    overflow: visible;
+}
+
+.botanical-hero .hero-image > img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: 590px;
+    object-fit: contain;
+    object-position: center bottom;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent;
+}
+
+.botanical-hero .image-circle {
+    width: 430px;
+    height: 430px;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.botanical-hero .hero-image > img {
+    z-index: 1;
+}
+
+@media (max-width: 700px) {
+    .botanical-hero .hero-image > img {
+        height: 430px;
+    }
+
+    .botanical-hero .image-circle {
+        width: 300px;
+        height: 300px;
+    }
+}
+
 
 }
