@@ -449,6 +449,7 @@ body {
     .container h1 {
         font-size: 32px;
     }
+}
 
     
 /* Visible Botanical Photo Background Fix */
@@ -881,7 +882,7 @@ body {
         height: 30px;
         object-fit: contain;
     }
-}
+
 
 
 }
