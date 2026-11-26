@@ -884,5 +884,54 @@ body {
     }
 
 
+/* Photo Shape and Border Correction */
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 590px;
+    object-fit: cover;
+    object-position: center top;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent;
+}
+
+/* Botanical Leaves */
+
+.leaf-decoration {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    color: #718b63;
+    font-size: 85px;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.leaf-one {
+    top: 35px;
+    left: -25px;
+    transform: rotate(-35deg);
+}
+
+.leaf-two {
+    bottom: 100px;
+    right: -15px;
+    transform: rotate(145deg);
+}
+
+@media (max-width: 700px) {
+    .hero-image img {
+        height: 430px;
+        max-width: 390px;
+    }
+
+    .leaf-decoration {
+        font-size: 60px;
+    }
+}
+
 
 }
