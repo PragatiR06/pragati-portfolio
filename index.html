@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -135,3 +138,77 @@
         }
     </style>
 </head>
+<body>
+
+<header class="site-header">
+    <a href="./index.html" class="brand-name">Pragati Patil</a>
+
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMenu()">
+        Menu
+    </button>
+
+    <nav id="mobile-menu" class="menu-drawer" aria-label="Primary navigation">
+        <a href="./index.html" onclick="closeMenu()">Home</a>
+        <a href="./about.html" onclick="closeMenu()">About</a>
+        <a href="./skills.html" onclick="closeMenu()">Skills</a>
+        <a href="./experience.html" onclick="closeMenu()">Experience</a>
+        <a href="./projects.html" onclick="closeMenu()">Projects</a>
+        <a href="./education.html" onclick="closeMenu()">Education</a>
+        <a href="./contact.html" onclick="closeMenu()">Contact</a>
+    </nav>
+</header>
+
+<main class="minimal-hero">
+    <div class="photo-box">
+        <img src="./a6c65678-b76f-42a3-b8b4-d26c2a0f6247.webp" alt="Portrait of Pragati Patil">
+    </div>
+
+    <div class="intro-box">
+        <p class="role-label">Software Engineer</p>
+        <h1>Hey, I am <span>Pragati Patil</span></h1>
+        <p class="bio-text">
+            Java Backend Developer with 3.2 years of experience building scalable,
+            reliable backend systems using Java, Spring Boot, Microservices, and Cloud Technologies.
+        </p>
+
+        <ul class="skill-list" aria-label="Core technologies">
+            <li><i class="devicon-java-plain colored" aria-hidden="true"></i> Java</li>
+            <li><i class="devicon-spring-original colored" aria-hidden="true"></i> Spring Boot</li>
+            <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+                    <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+                    <rect x="8.5" y="14" width="7" height="7" rx="1.5"></rect>
+                    <path d="M6.5 10v4"></path>
+                    <path d="M17.5 10v4"></path>
+                </svg>
+                Microservices
+            </li>
+            <li><i class="devicon-postgresql-plain colored" aria-hidden="true"></i> PostgreSQL</li>
+            <li><i class="devicon-googlecloud-plain colored" aria-hidden="true"></i> Google Cloud</li>
+            <li><i class="devicon-docker-plain colored" aria-hidden="true"></i> Docker</li>
+            <li><i class="devicon-kubernetes-plain colored" aria-hidden="true"></i> Kubernetes</li>
+        </ul>
+    </div>
+</main>
+
+<script>
+    function toggleMenu() {
+        const drawer = document.getElementById("mobile-menu");
+        const button = document.querySelector(".menu-toggle");
+        const isOpen = drawer.classList.toggle("open");
+        button.textContent = isOpen ? "Close" : "Menu";
+        button.setAttribute("aria-expanded", String(isOpen));
+    }
+
+    function closeMenu() {
+        const drawer = document.getElementById("mobile-menu");
+        const button = document.querySelector(".menu-toggle");
+        drawer.classList.remove("open");
+        button.textContent = "Menu";
+        button.setAttribute("aria-expanded", "false");
+    }
+</script>
+
+</body>
+</html>
