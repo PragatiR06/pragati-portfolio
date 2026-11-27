@@ -125,3 +125,61 @@ body {
     font-size: 0.85rem;
     font-weight: 500;
 }
+
+/* Styling for About, Skills, Projects, Experience, Education, Contact pages */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    gap: 10px;
+}
+
+.logo {
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #1f2923;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #3a473f;
+    font-size: 0.9rem;
+}
+
+.navbar a.active {
+    color: #2f5d3a;
+    font-weight: 600;
+}
+
+.talk-btn {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #2f5d3a;
+    color: #ffffff !important;
+}
+
+main, section {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 16px 24px;
+}
+
+footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px;
+    font-size: 0.85rem;
+    color: #5a685f;
+}
