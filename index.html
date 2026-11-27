@@ -7,93 +7,79 @@
     <meta name="description" content="Pragati Patil — Java Backend Developer with 3.2 years of experience in Java, Spring Boot, Microservices, and Cloud Technologies.">
     <title>Pragati Patil | Java Backend Developer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link rel="stylesheet" href="./style.css?v=8">
+    <link rel="stylesheet" href="./style.css?v=9">
 </head>
 <body>
 
-<header class="header">
-    <a href="./index.html" class="logo">Pragati <span>Patil</span></a>
+<header class="site-header">
+    <a href="./index.html" class="brand-name">Pragati Patil</a>
 
-    <nav class="navbar" aria-label="Primary navigation">
-        <a href="./index.html" class="active" aria-current="page">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./skills.html">Skills</a>
-        <a href="./experience.html">Experience</a>
-        <a href="./projects.html">Projects</a>
-        <a href="./education.html">Education</a>
-        <a href="./Pragati_Patil_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-        <a href="./contact.html" class="talk-btn">Let's talk</a>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMenu()">
+        Menu
+    </button>
+
+    <nav id="mobile-menu" class="menu-drawer" aria-label="Primary navigation">
+        <a href="./index.html" onclick="closeMenu()">Home</a>
+        <a href="./about.html" onclick="closeMenu()">About</a>
+        <a href="./skills.html" onclick="closeMenu()">Skills</a>
+        <a href="./experience.html" onclick="closeMenu()">Experience</a>
+        <a href="./projects.html" onclick="closeMenu()">Projects</a>
+        <a href="./education.html" onclick="closeMenu()">Education</a>
+        <a href="./contact.html" onclick="closeMenu()">Contact</a>
     </nav>
 </header>
 
-<main>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <p class="eyebrow">Software Engineer</p>
-            <h1>Hey, I am <span>Pragati Patil</span></h1>
-            <p class="hero-sub">
-                Java Backend Developer with 3.2 years of experience building scalable,
-                reliable backend systems using Java, Spring Boot, Microservices, and Cloud Technologies.
-            </p>
+<main class="minimal-hero">
+    <div class="photo-box">
+        <img src="./a6c65678-b76f-42a3-b8b4-d26c2a0f6247.webp" alt="Portrait of Pragati Patil">
+    </div>
 
-            <div class="hero-actions">
-                <a href="./projects.html" class="btn primary-btn">View Projects →</a>
-                <a href="./Pragati_Patil_Resume.pdf" class="btn outline-btn" target="_blank" rel="noopener noreferrer">Open Resume ↓</a>
-                <a href="./contact.html" class="btn outline-btn">Contact Me</a>
-            </div>
+    <div class="intro-box">
+        <p class="role-label">Software Engineer</p>
+        <h1>Hey, I am <span>Pragati Patil</span></h1>
+        <p class="bio-text">
+            Java Backend Developer with 3.2 years of experience building scalable,
+            reliable backend systems using Java, Spring Boot, Microservices, and Cloud Technologies.
+        </p>
 
-            <ul class="tech-stack" aria-label="Core technologies">
-                <li><span><i class="devicon-java-plain colored"></i> Java</span></li>
-                <li><span><i class="devicon-spring-original colored"></i> Spring Boot</span></li>
-                <li><span><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span></li>
-                <li><span><i class="devicon-googlecloud-plain colored"></i> Google Cloud</span></li>
-                <li><span><i class="devicon-docker-plain colored"></i> Docker</span></li>
-                <li><span><i class="devicon-kubernetes-plain colored"></i> Kubernetes</span></li>
-            </ul>
-        </div>
-
-        <div class="hero-media">
-            <img src="./a6c65678-b76f-42a3-b8b4-d26c2a0f6247.webp" alt="Portrait of Pragati Patil">
-            
-        </div>
-    </section>
-
-    <!-- Quick Preview Cards Linking to Your Separate Pages -->
-    <section class="section">
-        <div class="section-header">
-            <span class="tag">Explore</span>
-            <h2>Overview of my work &amp; background</h2>
-        </div>
-
-        <div class="projects-grid">
-            <article class="project-card">
-                <span class="project-category">01 • Background</span>
-                <h3>About Me</h3>
-                <p>Learn more about my 3.2 years as a Java Backend Developer across Pune and Chennai.</p>
-                <a href="./about.html" class="project-link">Go to About →</a>
-            </article>
-
-            <article class="project-card">
-                <span class="project-category">02 • Portfolio</span>
-                <h3>Backend Projects</h3>
-                <p>Explore my Spring Boot microservices, cloud deployments, and PostgreSQL work.</p>
-                <a href="./projects.html" class="project-link">Go to Projects →</a>
-            </article>
-
-            <article class="project-card">
-                <span class="project-category">03 • Career &amp; Credentials</span>
-                <h3>Experience, Skills &amp; Resume</h3>
-                <p>Review my work history, technical stack, education, or open my full PDF resume.</p>
-                <a href="./experience.html" class="project-link">Go to Experience →</a>
-            </article>
-        </div>
-    </section>
+        <ul class="skill-list" aria-label="Core technologies">
+            <li><i class="devicon-java-plain colored" aria-hidden="true"></i> Java</li>
+            <li><i class="devicon-spring-original colored" aria-hidden="true"></i> Spring Boot</li>
+            <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+                    <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+                    <rect x="8.5" y="14" width="7" height="7" rx="1.5"></rect>
+                    <path d="M6.5 10v4"></path>
+                    <path d="M17.5 10v4"></path>
+                </svg>
+                Microservices
+            </li>
+            <li><i class="devicon-postgresql-plain colored" aria-hidden="true"></i> PostgreSQL</li>
+            <li><i class="devicon-googlecloud-plain colored" aria-hidden="true"></i> Google Cloud</li>
+            <li><i class="devicon-docker-plain colored" aria-hidden="true"></i> Docker</li>
+            <li><i class="devicon-kubernetes-plain colored" aria-hidden="true"></i> Kubernetes</li>
+        </ul>
+    </div>
 </main>
 
-<footer class="footer">
-    <p>© 2026 Pragati Patil. All Rights Reserved.</p>
-</footer>
+<script>
+    function toggleMenu() {
+        const drawer = document.getElementById("mobile-menu");
+        const button = document.querySelector(".menu-toggle");
+        const isOpen = drawer.classList.toggle("open");
+        button.textContent = isOpen ? "Close" : "Menu";
+        button.setAttribute("aria-expanded", String(isOpen));
+    }
+
+    function closeMenu() {
+        const drawer = document.getElementById("mobile-menu");
+        const button = document.querySelector(".menu-toggle");
+        drawer.classList.remove("open");
+        button.textContent = "Menu";
+        button.setAttribute("aria-expanded", "false");
+    }
+</script>
 
 </body>
 </html>
