@@ -1,85 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pragati Patil — Java Backend Developer with 3.2 years of experience in Java, Spring Boot, Microservices, and Cloud Technologies.">
     <title>Pragati Patil | Java Backend Developer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link rel="stylesheet" href="./style.css?v=9">
+    <link rel="stylesheet" href="./style.css?v=11">
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f8f8f4;
+            color: #1f2923;
+        }
+
+        .site-header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 18px 24px;
+        }
+
+        .brand-name {
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: #1f2923;
+        }
+
+        .menu-toggle {
+            padding: 8px 16px;
+            border-radius: 999px;
+            border: 1px solid #d5d9ce;
+            background: #ffffff;
+            color: #1f2923;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .menu-drawer {
+            display: none;
+            position: absolute;
+            top: 64px;
+            right: 24px;
+            z-index: 20;
+            flex-direction: column;
+            gap: 10px;
+            min-width: 180px;
+            padding: 16px 18px;
+            border-radius: 14px;
+            background: #ffffff;
+            border: 1px solid #e2e6dc;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .menu-drawer.open {
+            display: flex;
+        }
+
+        .menu-drawer a {
+            text-decoration: none;
+            color: #1f2923;
+            font-size: 0.95rem;
+            padding: 4px 0;
+        }
+
+        .minimal-hero {
+            max-width: 540px;
+            margin: 0 auto;
+            padding: 12px 24px 48px;
+        }
+
+        .photo-box img {
+            width: 100%;
+            max-height: 360px;
+            object-fit: cover;
+            object-position: top center;
+            border-radius: 16px;
+            display: block;
+        }
+
+        .intro-box {
+            margin-top: 22px;
+        }
+
+        .role-label {
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #4a5d50;
+            margin: 0;
+        }
+
+        .intro-box h1 {
+            font-size: 2.1rem;
+            line-height: 1.15;
+            margin: 6px 0 12px;
+        }
+
+        .intro-box h1 span {
+            color: #2f5d3a;
+        }
+
+        .bio-text {
+            font-size: 0.98rem;
+            line-height: 1.6;
+            color: #3a473f;
+            margin: 0 0 18px;
+        }
+
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-list li {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: #eef1e8;
+            border: 1px solid #dfe4d7;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+    </style>
 </head>
-<body>
-
-<header class="site-header">
-    <a href="./index.html" class="brand-name">Pragati Patil</a>
-
-    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMenu()">
-        Menu
-    </button>
-
-    <nav id="mobile-menu" class="menu-drawer" aria-label="Primary navigation">
-        <a href="./index.html" onclick="closeMenu()">Home</a>
-        <a href="./about.html" onclick="closeMenu()">About</a>
-        <a href="./skills.html" onclick="closeMenu()">Skills</a>
-        <a href="./experience.html" onclick="closeMenu()">Experience</a>
-        <a href="./projects.html" onclick="closeMenu()">Projects</a>
-        <a href="./education.html" onclick="closeMenu()">Education</a>
-        <a href="./contact.html" onclick="closeMenu()">Contact</a>
-    </nav>
-</header>
-
-<main class="minimal-hero">
-    <div class="photo-box">
-        <img src="./a6c65678-b76f-42a3-b8b4-d26c2a0f6247.webp" alt="Portrait of Pragati Patil">
-    </div>
-
-    <div class="intro-box">
-        <p class="role-label">Software Engineer</p>
-        <h1>Hey, I am <span>Pragati Patil</span></h1>
-        <p class="bio-text">
-            Java Backend Developer with 3.2 years of experience building scalable,
-            reliable backend systems using Java, Spring Boot, Microservices, and Cloud Technologies.
-        </p>
-
-        <ul class="skill-list" aria-label="Core technologies">
-            <li><i class="devicon-java-plain colored" aria-hidden="true"></i> Java</li>
-            <li><i class="devicon-spring-original colored" aria-hidden="true"></i> Spring Boot</li>
-            <li>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
-                    <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
-                    <rect x="8.5" y="14" width="7" height="7" rx="1.5"></rect>
-                    <path d="M6.5 10v4"></path>
-                    <path d="M17.5 10v4"></path>
-                </svg>
-                Microservices
-            </li>
-            <li><i class="devicon-postgresql-plain colored" aria-hidden="true"></i> PostgreSQL</li>
-            <li><i class="devicon-googlecloud-plain colored" aria-hidden="true"></i> Google Cloud</li>
-            <li><i class="devicon-docker-plain colored" aria-hidden="true"></i> Docker</li>
-            <li><i class="devicon-kubernetes-plain colored" aria-hidden="true"></i> Kubernetes</li>
-        </ul>
-    </div>
-</main>
-
-<script>
-    function toggleMenu() {
-        const drawer = document.getElementById("mobile-menu");
-        const button = document.querySelector(".menu-toggle");
-        const isOpen = drawer.classList.toggle("open");
-        button.textContent = isOpen ? "Close" : "Menu";
-        button.setAttribute("aria-expanded", String(isOpen));
-    }
-
-    function closeMenu() {
-        const drawer = document.getElementById("mobile-menu");
-        const button = document.querySelector(".menu-toggle");
-        drawer.classList.remove("open");
-        button.textContent = "Menu";
-        button.setAttribute("aria-expanded", "false");
-    }
-</script>
-
-</body>
-</html>
